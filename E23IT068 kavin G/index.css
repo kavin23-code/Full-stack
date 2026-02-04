@@ -1,0 +1,98 @@
+<div class="quiz-card" >
+    <h2>Front-End Basics Quiz</h2>
+    <p id="progress">Question 1 of 5</p>
+
+    <div id="question-container">
+        <!-- Question will load here -->
+    </div>
+
+    <div class="buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn">Submit Quiz</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+</div>
+<br>
+
+<img src="quiz.jpg" width="420">
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-card {
+    background: yellow;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+#progress {
+    text-align: center;
+    color: #666;
+}
+
+.options {
+    margin-top: 15px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#submitBtn {
+    background: pink;
+}
+
+#submitBtn:hover {
+    background: pink;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
