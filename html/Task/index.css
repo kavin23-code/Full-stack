@@ -1,0 +1,114 @@
+:root {
+    --bg: #f6f8fa;
+    --card: #ffffff;
+    --accent: #2b7cff;
+    --muted: #666;
+    --danger: #d9534f;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #111;
+    padding: 28px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 18px 0
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(12, 20, 40, 0.05);
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 80px;
+    font-size: 0.95rem;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-actions {
+    text-align: right;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px)
+}
+
+button.danger {
+    background: var(--danger);
+}
+
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.contacts-table th,
+.contacts-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.actions-col {
+    width: 140px
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.empty {
+    display: none
+}
+
+@media (max-width:640px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .form-row label {
+        width: auto
+    }
+    .actions-col {
+        width: auto
+    }
+}

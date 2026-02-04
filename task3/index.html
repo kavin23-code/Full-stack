@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Character Counter</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #counter {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Character Counter Configuration</h2>
+
+    <form id="configForm">
+        <label>
+            Maximum Characters:
+            <input type="number" id="maxChars" required>
+        </label><br><br>
+
+        <label>
+            Warning Limit (%):
+            <input type="number" id="warnPercent" required>
+        </label><br><br>
+
+        <button type="submit">Apply Settings</button>
+    </form>
+
+    <hr>
+
+    <h3>Textarea</h3>
+    <textarea id="textArea" rows="5" cols="50" disabled></textarea>
+    <div id="counter">Remaining: 0</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

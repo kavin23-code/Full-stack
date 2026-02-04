@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Report Tracker</title>
+    <link rel="stylesheet" href="k.css">
+</head>
+<body>
+
+<h2>Expense Report Tracker</h2>
+
+<form id="expenseForm">
+    <input type="text" id="title" placeholder="Expense Title" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="date" id="date" required>
+    <button type="submit">Add Expense</button>
+    <button type="button" id="clearBtn">Clear All</button>
+</form>
+
+<ul id="expenseList"></ul>
+
+<h3>Category Wise Expense Chart</h3>
+<canvas id="chart" width="400" height="200"></canvas>
+
+<script src="k.js"></script>
+</body>
+</html>
